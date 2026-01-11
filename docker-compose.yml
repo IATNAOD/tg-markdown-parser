@@ -1,9 +1,6 @@
 services:
   tg-markdown-parser:
     container_name: tg-markdown-parser
-    env_file:
-      - path: .env
-        required: true
     restart: always
     build:
       context: "."

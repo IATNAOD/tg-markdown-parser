@@ -1,11 +1,9 @@
-FROM node:20
+FROM node:22
 
 WORKDIR /usr/bot
 
 COPY . .
 
-RUN chown -R node:node /usr/bot
-
-USER node
+RUN yarn install
 
 CMD [ "node", "index.js" ]
