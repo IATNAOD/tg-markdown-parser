@@ -1,10 +1,10 @@
 FROM node:20
 
-WORKDIR /usr/backend
+WORKDIR /usr/bot
 
 COPY . .
 
-RUN chown -R node:node /usr/backend
+RUN chown -R node:node /usr/bot
 
 USER node
 
