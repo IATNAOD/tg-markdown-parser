@@ -20,7 +20,7 @@ const { TOKEN, DOMAIN, LBA_URL, HOST, PORT } = require("./config");
 			let text = toMarkdownV2(ctx.message);
 
 			// send parsed message
-			await ctx.reply(text.replace(/\r?\n/g, "\\n").replace(/\r?\\/g, "\\\\"));
+			await ctx.reply(text.replace(/\r?\\/g, "\\\\"));
 
 			// send message like original
 			await ctx.reply(text, { parse_mode: "MarkdownV2" });
